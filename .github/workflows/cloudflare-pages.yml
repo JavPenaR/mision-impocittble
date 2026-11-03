@@ -33,3 +33,8 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=mision-impocittble --branch=main
+      - name: Verify public page
+        run: |
+          curl --fail --silent --show-error --location --retry 12 --retry-all-errors --retry-delay 5 \
+            --output /tmp/mision-impocittble.html https://mision-impocittble.pages.dev/
+          grep -q 'Mision impoCITTble' /tmp/mision-impocittble.html
