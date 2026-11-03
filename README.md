@@ -13,6 +13,8 @@ En GitHub, abre **Settings → Secrets and variables → Actions** y agrega dos 
 
 El flujo prepara `dist/` con `index.html`, CSS, JavaScript e imágenes; luego lo despliega a `mision-impocittble.pages.dev`. No copies el token a archivos del repositorio.
 
+`_headers` hace que el navegador revalide el HTML y `signals.js` para evitar que se sigan mostrando flags de una versión anterior.
+
 No hay dependencias ni proceso de compilación. Para probar localmente, abre `index.html` en un navegador o ejecuta `python -m http.server 8000` desde esta carpeta.
 
 El logo del evento es `assets/logo-evento.svg`, basado en el SVG Citt de ciberseguridad y tablero. Se usa en la portada, la navegación, el pie de página y el icono del navegador. La sede y el enlace de contacto se pueden agregar cuando estén confirmados.
