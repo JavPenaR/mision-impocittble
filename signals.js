@@ -1,10 +1,10 @@
 (() => {
   const frames = [
-  { icon: 'assets/logo-evento.svg', signal: 'SIGNAL_01', state: '● LIVE', flag: 'IMPOCITTBLE{ACCESO_DENEGADO}' },
-    { icon: 'assets/icon-shield.svg', signal: 'SCAN_02', state: '● ACTIVE', flag: 'IMPOCITTBLE{ESCUDO_404}' },
-    { icon: 'assets/icon-lock.svg', signal: 'AUTH_03', state: '● SECURE', flag: 'IMPOCITTBLE{CLAVE_INCORRECTA}' },
-    { icon: 'assets/icon-terminal.svg', signal: 'TRACE_04', state: '● FOUND', flag: 'IMPOCITTBLE{11NOV_SENAL_ACTIVA}' },
-    { icon: 'assets/icon-key.svg', signal: 'NODE_05', state: '● ONLINE', flag: 'IMPOCITTBLE{RUTA_SIN_SALIDA}' },
+    { icon: 'assets/logo-evento.svg', signal: 'SIGNAL_01', state: '● LIVE', flag: 'CTI{ACCESO_DENEGADO}' },
+    { icon: 'assets/icon-shield.svg', signal: 'SCAN_02', state: '● ACTIVE', flag: 'CTI{ESCUDO_404}' },
+    { icon: 'assets/icon-lock.svg', signal: 'AUTH_03', state: '● SECURE', flag: 'CTI{CLAVE_INCORRECTA}' },
+    { icon: 'assets/icon-terminal.svg', signal: 'TRACE_04', state: '● FOUND', flag: 'CTI{11NOV_SENAL_ACTIVA}' },
+    { icon: 'assets/icon-key.svg', signal: 'NODE_05', state: '● ONLINE', flag: 'CTI{RUTA_SIN_SALIDA}' },
   ];
 
   const panel = document.querySelector('.hero-art');

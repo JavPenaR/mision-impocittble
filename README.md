@@ -15,14 +15,14 @@ El flujo prepara `dist/` con `index.html`, CSS, JavaScript e imágenes; luego lo
 
 No hay dependencias ni proceso de compilación. Para probar localmente, abre `index.html` en un navegador o ejecuta `python -m http.server 8000` desde esta carpeta.
 
-El logo del evento es `assets/logo-evento.svg`, basado en el SVG Citt de ciberseguridad y tablero. Se usa en la portada, la navegación, el pie de página y el icono del navegador. Antes de publicar se pueden agregar sede, inscripción y enlace de contacto cuando estén confirmados.
+El logo del evento es `assets/logo-evento.svg`, basado en el SVG Citt de ciberseguridad y tablero. Se usa en la portada, la navegación, el pie de página y el icono del navegador. La sede y el enlace de contacto se pueden agregar cuando estén confirmados.
 
-La ilustración suministrada se muestra en la sección visual posterior a la portada como `assets/mision-impocittble-escena.png`.
+La ilustración suministrada se muestra al final de la página, después de fecha y hora, como `assets/mision-impocittble-escena.png`.
 
-## Activar la inscripción
+## Inscripción
 
-Cuando exista el cuestionario, reemplaza `href="#inscripcion"` en los dos botones **Inscripción próximamente** de `index.html` por su URL. Cambia el texto de los botones a **Inscribirme** y elimina el párrafo con `id="inscripcion"`.
+Los enlaces **Inscribirme** llevan a `https://forms.gle/8wJerXh5KuEd8DAi6`.
 
 ## Señales y flags
 
-El panel de la portada cambia el emblema, la señal y la flag juntos cada **5 segundos**, incluso con el cursor sobre el panel. El botón **Siguiente señal** permite avanzar manualmente. La flag propuesta para el desafío promocional está entre las cinco; debe configurarse como respuesta válida en el sistema de puntuación antes del evento. Como el sitio es estático y público, cualquier visitante puede encontrar todas las flags inspeccionando `signals.js`.
+El panel de la portada cambia el emblema, la señal y la flag juntos cada **5 segundos**, incluso con el cursor sobre el panel. El botón **Siguiente señal** permite avanzar manualmente. Todas las flags usan el formato `CTI{...}`. La flag propuesta para el desafío promocional es `CTI{11NOV_SENAL_ACTIVA}`; debe configurarse como respuesta válida en el sistema de puntuación antes del evento. Como el sitio es estático y público, cualquier visitante puede encontrar todas las flags inspeccionando `signals.js`.
