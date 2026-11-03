@@ -32,6 +32,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: |
-            pages project create mision-impocittble --production-branch=main
-            pages deploy dist --project-name=mision-impocittble --branch=main
+          command: pages deploy dist --project-name=mision-impocittble --branch=main
