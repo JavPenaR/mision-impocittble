@@ -27,4 +27,4 @@ Los enlaces **Inscribirme** llevan a `https://forms.gle/8wJerXh5KuEd8DAi6`.
 
 ## Señales y flags
 
-El panel de la portada cambia el emblema, la señal y la flag juntos cada **5 segundos**, incluso con el cursor sobre el panel. El botón **Siguiente señal** permite avanzar manualmente. Todas las flags usan el formato `CTI{...}`. La flag propuesta para el desafío promocional es `CTI{11NOV_SENAL_ACTIVA}`; debe configurarse como respuesta válida en el sistema de puntuación antes del evento. Como el sitio es estático y público, cualquier visitante puede encontrar todas las flags inspeccionando `signals.js`.
+El panel de la portada cambia el emblema, la señal y la flag juntos cada **5 segundos**, incluso con el cursor sobre el panel. El botón **Siguiente señal** permite avanzar manualmente. Todas las flags usan el formato `CTI{...}` y mezclan letras y números. La flag propuesta para el desafío promocional es `CTI{11N0V-S3N4L-4CT1V4}`; debe configurarse como respuesta válida en el sistema de puntuación antes del evento. Como el sitio es estático y público, cualquier visitante puede encontrar todas las flags inspeccionando `signals.js`.
