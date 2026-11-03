@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Escudo de ciberseguridad">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#70d5ff"/><stop offset="1" stop-color="#c5f779"/></linearGradient></defs>
+  <path d="M120 20 203 52v62c0 55-30 93-83 121-53-28-83-66-83-121V52l83-32Z" fill="#123949" stroke="url(#g)" stroke-width="7"/>
+  <path d="M120 43 180 66v47c0 40-21 68-60 93-39-25-60-53-60-93V66l60-23Z" fill="none" stroke="#70d5ff" stroke-width="2" stroke-dasharray="5 7"/>
+  <path d="m81 121 25 25 52-54" fill="none" stroke="#c5f779" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+</svg>

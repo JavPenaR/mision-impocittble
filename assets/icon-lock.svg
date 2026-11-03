@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Candado digital">
+  <path d="M66 106V78a54 54 0 0 1 108 0v28" fill="none" stroke="#70d5ff" stroke-width="12" stroke-linecap="round"/>
+  <rect x="43" y="103" width="154" height="117" rx="18" fill="#123949" stroke="#c5f779" stroke-width="7"/>
+  <circle cx="120" cy="153" r="17" fill="#70d5ff"/><path d="M120 165v30" stroke="#70d5ff" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="66" cy="78" r="5" fill="#c5f779"/><circle cx="174" cy="78" r="5" fill="#c5f779"/>
+</svg>

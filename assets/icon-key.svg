@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Llave de acceso">
+  <circle cx="86" cy="93" r="54" fill="#123949" stroke="#70d5ff" stroke-width="8"/><circle cx="86" cy="93" r="19" fill="none" stroke="#c5f779" stroke-width="8"/>
+  <path d="m125 132 79 79m-19-19 19-19m-38 0 18-19" fill="none" stroke="#c5f779" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="86" cy="19" r="5" fill="#70d5ff"/><circle cx="19" cy="93" r="5" fill="#70d5ff"/>
+</svg>

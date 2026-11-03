@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Terminal de seguridad">
+  <rect x="21" y="40" width="198" height="153" rx="13" fill="#123949" stroke="#70d5ff" stroke-width="7"/>
+  <path d="M21 76h198" stroke="#70d5ff" stroke-width="5"/><circle cx="41" cy="59" r="5" fill="#c5f779"/><circle cx="59" cy="59" r="5" fill="#c5f779"/>
+  <path d="m56 113 26 22-26 22m47 0h78" fill="none" stroke="#c5f779" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M88 220h64m-32-27v27" stroke="#70d5ff" stroke-width="6" stroke-linecap="round"/>
+</svg>

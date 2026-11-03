@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Citt · logo de ciberseguridad y tablero</title>
+  <desc id="desc">Emblema circular Citt con rutas de tablero, nodos de circuito, una flag y un escudo.</desc>
+  <defs>
+    <radialGradient id="disc" cx="45%" cy="37%" r="70%">
+      <stop offset="0" stop-color="#203942"/>
+      <stop offset="1" stop-color="#101a20"/>
+    </radialGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#87c8bd"/>
+      <stop offset="1" stop-color="#f0b56a"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="256" cy="256" r="218" fill="url(#disc)" stroke="#35464b" stroke-width="3"/>
+  <circle cx="256" cy="256" r="198" fill="none" stroke="#87c8bd" stroke-opacity=".3" stroke-width="2" stroke-dasharray="3 10"/>
+
+  <!-- The original open orbit and its two endpoint nodes remain the main silhouette. -->
+  <g fill="none" stroke="#edf2e8" stroke-width="10" stroke-linecap="round">
+    <path d="M380 130A177 177 0 0 0 96 345"/>
+    <path d="M130 381A177 177 0 0 0 419 181"/>
+  </g>
+  <g fill="#edf2e8">
+    <circle cx="380" cy="130" r="12"/>
+    <circle cx="130" cy="381" r="12"/>
+  </g>
+
+  <!-- A compact circuit line connects the lettering to the board motif. -->
+  <path d="M167 171h42l14-14h65l14 14h43" fill="none" stroke="#87c8bd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#101a20" stroke="#87c8bd" stroke-width="5">
+    <circle cx="167" cy="171" r="7"/>
+    <circle cx="256" cy="157" r="7"/>
+    <circle cx="345" cy="171" r="7"/>
+  </g>
+
+  <text x="254" y="288" fill="#edf2e8" font-family="Space Grotesk, Arial, sans-serif" font-size="130" font-weight="500" letter-spacing="-10" text-anchor="middle">Citt</text>
+
+  <!-- Three connected diamonds hint at the isometric escape-game board. -->
+  <path d="M177 340l28-15 28 15-28 15zM228 340l28-15 28 15-28 15zM279 340l28-15 28 15-28 15z" fill="#213940" stroke="#87c8bd" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M205 340h102" fill="none" stroke="url(#route)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="205" cy="340" r="5" fill="#87c8bd"/>
+  <circle cx="256" cy="340" r="5" fill="#f0b56a"/>
+  <circle cx="307" cy="340" r="5" fill="#87c8bd"/>
+
+  <!-- The goal flag and shield carry the CTF / security theme. -->
+  <path d="M382 93v29" stroke="#f0b56a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M384 94h21l-6 9 6 9h-21z" fill="#f0b56a"/>
+  <path d="M365 348l25-10 25 10v24c0 19-11 34-25 42-14-8-25-23-25-42z" fill="#f0b56a" stroke="#101a20" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="390" cy="365" r="5" fill="#101a20"/>
+  <path d="M387 369h6l3 13h-12z" fill="#101a20"/>
+</svg>
