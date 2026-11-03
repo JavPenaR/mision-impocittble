@@ -1,4 +1,4 @@
-# Mision impoCITTble · sitio del evento
+# Mision impoCITTble · sitio del evento · 11 Noviembre
 
 Página estática de promoción del CTF Mision impoCITTble, programado para el **11 de noviembre de 2026, de 11:00 a 17:00 h (Chile)**.
 
