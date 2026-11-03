@@ -2,11 +2,16 @@
 
 Página estática de promoción del CTF Mision impoCITTble, programado para el **11 de noviembre de 2026, de 11:00 a 17:00 h (Chile)**.
 
-## Publicar en GitHub Pages
+## Publicar en Cloudflare Pages
 
-1. Sube **el contenido de esta carpeta** a la raíz de un repositorio de GitHub. Conserva juntos `index.html`, `styles.css`, `signals.js` y `assets/`.
-2. En el repositorio, abre **Settings → Pages**.
-3. En **Build and deployment**, selecciona **Deploy from a branch**, elige la rama principal y la carpeta **/ (root)**; guarda.
+El proyecto de Cloudflare Pages se llama `mision-impocittble`. El flujo `.github/workflows/cloudflare-pages.yml` publica el sitio automáticamente con cada push a `main` y también se puede ejecutar desde **Actions → Deploy Cloudflare Pages → Run workflow**.
+
+En GitHub, abre **Settings → Secrets and variables → Actions** y agrega dos secretos de repositorio:
+
+- `CLOUDFLARE_ACCOUNT_ID`: ID de la cuenta mostrado en **Cloudflare → Workers & Pages → Account details**.
+- `CLOUDFLARE_API_TOKEN`: token personalizado de Cloudflare con permiso **Account → Cloudflare Pages → Edit**, limitado a la cuenta del proyecto.
+
+El flujo prepara `dist/` con `index.html`, CSS, JavaScript e imágenes; luego lo despliega a `mision-impocittble.pages.dev`. No copies el token a archivos del repositorio.
 
 No hay dependencias ni proceso de compilación. Para probar localmente, abre `index.html` en un navegador o ejecuta `python -m http.server 8000` desde esta carpeta.
 
