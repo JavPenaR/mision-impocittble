@@ -35,15 +35,23 @@ jobs:
           command: pages deploy dist --project-name=mision-impocittble --branch=main
       - name: Verify public page
         run: |
-          curl --fail --silent --show-error --location --retry 12 --retry-all-errors --retry-delay 5 \
-            --output /tmp/mision-impocittble.html https://mision-impocittble.pages.dev/
+          for attempt in {1..12}; do
+            if curl --fail --silent --show-error --location \
+              --header 'Cache-Control: no-cache' \
+              --output /tmp/mision-impocittble.html \
+              "https://mision-impocittble.pages.dev/?deploy=${GITHUB_SHA}" \
+              && grep -q '18 de noviembre de 2026' /tmp/mision-impocittble.html \
+              && grep -q 'signals.js?v=cti-3' /tmp/mision-impocittble.html; then
+              break
+            fi
+            sleep 5
+          done
           grep -q 'Mision impoCITTble' /tmp/mision-impocittble.html
           grep -q '18 de noviembre de 2026' /tmp/mision-impocittble.html
           if grep -q '11 de noviembre de 2026' /tmp/mision-impocittble.html; then
             echo 'The previous event date was found on the published page.' >&2
             exit 1
           fi
-          grep -q 'signals.js?v=cti-3' /tmp/mision-impocittble.html
           curl --fail --silent --show-error --location --output /tmp/mision-signals.js \
             'https://mision-impocittble.pages.dev/signals.js?v=cti-3'
           grep -q 'CTI{18N0V-S3N4L-4CT1V4}' /tmp/mision-signals.js
